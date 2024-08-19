@@ -112,10 +112,10 @@
 
         BDO {
             bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans    &trans     &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &kp F2  &trans    &trans     &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &kp NUMBER_1  &kp F3  &trans    &trans     &trans     &trans     &trans  &trans  &trans
-                        &trans        &trans  &trans    &mkp LCLK  &mkp MCLK  &mkp RCLK
+&trans  &trans  &trans  &trans        &trans  &trans    &trans     &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &kp F2  &trans    &trans     &trans  &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &kp NUMBER_1  &kp F3  &trans    &mkp MCLK  &trans  &trans     &trans  &trans  &trans
+                        &trans        &trans  &trans    &mkp LCLK  &trans  &mkp RCLK
             >;
         };
     };
