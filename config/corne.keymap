@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -111,10 +112,10 @@
 
         BDO {
             bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans        &kp F2  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &kp NUMBER_1  &kp F3  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans        &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans    &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &kp F2  &trans    &trans     &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &kp NUMBER_1  &kp F3  &trans    &trans     &trans     &trans     &trans  &trans  &trans
+                        &trans        &trans  &trans    &mkp LCLK  &mkp MCLK  &mkp RCLK
             >;
         };
     };
