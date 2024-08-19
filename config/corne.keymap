@@ -114,7 +114,7 @@
             bindings = <
 &trans  &trans  &trans  &trans        &trans  &trans    &trans          &kp UP_ARROW    &trans           &trans  &trans  &mkp LCLK
 &trans  &trans  &trans  &trans        &kp F2  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &mkp RCLK
-&trans  &trans  &trans  &kp NUMBER_1  &kp F3  &trans    &trans          &trans          &mkp MCLK        &trans  &trans  &mkp MCLK
+&trans  &trans  &trans  &kp NUMBER_1  &kp F3  &trans    &trans          &trans          &trans           &trans  &trans  &mkp MCLK
                         &trans        &trans  &trans    &kp I           &trans          &trans
             >;
         };
