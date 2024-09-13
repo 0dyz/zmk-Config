@@ -76,10 +76,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE     &kp Q             &kp UP_ARROW  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp HOME   &kp BSPC
-&kp LEFT_ALT  &kp LEFT          &kp DOWN      &kp RIGHT     &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD    &kp PG_UP  &kp F10
-&kp CAPS      &kp LEFT_CONTROL  &kp F2        &kp NUMBER_9  &kp NUMBER_0  &kp ENTER       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0  &kp PG_DN  &kp RIGHT_SHIFT
-                                              &sk LGUI      &trans        &kp SPACE       &kp RET       &trans        &kp RALT
+&kp GRAVE     &kp Q             &kp UP_ARROW  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans      &kp HOME   &kp BSPC
+&kp LEFT_ALT  &kp LEFT          &kp DOWN      &kp RIGHT     &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PERIOD  &kp PG_UP  &kp F10
+&kp CAPS      &kp LEFT_CONTROL  &kp F2        &kp NUMBER_9  &kp NUMBER_0  &kp ENTER       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans      &kp PG_DN  &kp RIGHT_SHIFT
+                                              &sk LGUI      &trans        &kp SPACE       &kp RET       &kp N0        &kp RALT
             >;
         };
 
