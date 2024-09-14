@@ -9,9 +9,9 @@
 
 / {
     chosen {
-        zmk,matrix_transform = &default_transform;
+        /delete-property/ zmk,physical-layout;
 
-        //zmk,matrix_transform = &five_column_transform;
+        zmk,matrix-transform = &five_column_transform;
     };
 };
 
@@ -126,4 +126,6 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 };
 
-
+/delete-node/ &foostan_corne_5col_layout;
+/delete-node/ &foostan_corne_6col_layout;
+/delete-node/ &{/foostan_corne_position_map};
