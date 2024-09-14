@@ -11,7 +11,7 @@
     chosen {
         /delete-property/ zmk,physical-layout;
 
-        zmk,matrix-transform = &five_column_transform;
+        zmk,matrix-transform = &six_column_transform;
     };
 };
 
