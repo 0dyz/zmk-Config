@@ -9,7 +9,7 @@
     chosen {
         /delete-property/ zmk,physical-layout;
 
-        zmk,matrix-transform = &six_column_transform;
+        zmk,matrix-transform = &default_transform;
     };
 };
 
