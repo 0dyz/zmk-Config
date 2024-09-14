@@ -1,3 +1,11 @@
+/ {
+   chosen {
+      /delete-property/ zmk,physical-layout;
+      zmk,matrix-transform = &five_column_transform;
+   };
+};
+
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
@@ -119,6 +127,15 @@
             >;
         };
     };
+
+
+  };
+};
+
+/delete-node/ &foostan_corne_5col_layout;
+/delete-node/ &foostan_corne_6col_layout;
+/delete-node/ &{/foostan_corne_position_map};
+
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 };
