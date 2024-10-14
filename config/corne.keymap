@@ -18,7 +18,7 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 1>,
-                <&macro_tap>,
+                <&macro_press>,
                 <&rgb_ug RGB_OFF>;
 
             label = "LOWER_LAYER";
@@ -52,7 +52,7 @@
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 3>,
-                <&macro_tap>,
+                <&macro_press>,
                 <&rgb_ug RGB_OFF>;
 
             label = "ADJUST_LAYER";
