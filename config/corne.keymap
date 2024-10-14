@@ -36,7 +36,7 @@
                 <&macro_release>,
                 <&mo 2>,
                 <&macro_press>,
-                <&rgb_ug RGB_COLOR_HSB(0,0,0)>;
+                <&rgb_ug RGB_OFF>;
 
             label = "RAISE_LAYER";
         };
@@ -53,7 +53,7 @@
                 <&macro_release>,
                 <&mo 3>,
                 <&macro_tap>,
-                <&ext_power EP_OFF>;
+                <&rgb_ug RGB_OFF>;
 
             label = "ADJUST_LAYER";
         };
