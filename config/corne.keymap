@@ -14,7 +14,7 @@
                 <&macro_press>,
                 <&mo 1 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,100)>,
                 <&macro_release>,
-                <&mo 1 &rgb_ug RGB_OFF>;
+                <&rgb_ug RGB_OFF &mo 1>;
 
             label = "LOWER_LAYER";
         };
@@ -26,7 +26,7 @@
                 <&macro_press>,
                 <&mo 2 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,68,59)>,
                 <&macro_release>,
-                <&rgb_ug RGB_OFF>;
+                <&rgb_ug RGB_OFF &mo 2>;
 
             label = "RAISE_LAYER";
         };
@@ -38,7 +38,7 @@
                 <&macro_press>,
                 <&mo 3 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(190,100,50)>,
                 <&macro_release>,
-                <&rgb_ug RGB_OFF>;
+                <&rgb_ug RGB_OFF &mo 3>;
 
             label = "ADJUST_LAYER";
         };
@@ -50,7 +50,7 @@
                 <&macro_press>,
                 <&mo 4 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(37,100,50)>,
                 <&macro_release>,
-                <&rgb_ug RGB_OFF>;
+                <&rgb_ug RGB_OFF &mo 4>;
 
             label = "BDO";
         };
