@@ -10,28 +10,48 @@
         lower_layer: lower_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 1 &rgb_ug RGB_COLOR_HSB(0,0,100)>;
+            bindings =
+                <&macro_press>,
+                <&mo 1 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,100)>,
+                <&macro_release>,
+                <&rgb_ug RGB_OFF>;
+
             label = "LOWER_LAYER";
         };
 
         raise_layer: raise_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 2 &rgb_ug RGB_COLOR_HSB(0,68,59)>;
+            bindings =
+                <&macro_press>,
+                <&mo 2 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,68,59)>,
+                <&macro_release>,
+                <&rgb_ug RGB_OFF>;
+
             label = "RAISE_LAYER";
         };
 
         adjust_layer: adjust_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 3 &rgb_ug RGB_COLOR_HSB(190,100,50)>;
+            bindings =
+                <&macro_press>,
+                <&mo 3 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(190,100,50)>,
+                <&macro_release>,
+                <&rgb_ug RGB_OFF>;
+
             label = "ADJUST_LAYER";
         };
 
         BDO: BDO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mo 4 &rgb_ug RGB_COLOR_HSB(37,100,50)>;
+            bindings =
+                <&macro_press>,
+                <&mo 4 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(37,100,50)>,
+                <&macro_release>,
+                <&rgb_ug RGB_OFF>;
+
             label = "BDO";
         };
     };
