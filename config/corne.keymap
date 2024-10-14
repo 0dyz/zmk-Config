@@ -12,10 +12,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 1 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,100)>,
+                <&mo 1>,
+                <&macro_tap>,
+                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,100)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&rgb_ug RGB_TOG &mo 1>;
+                <&mo 1>,
+                <&macro_tap>,
+                <&rgb_ug RGB_OFF>;
 
             label = "LOWER_LAYER";
         };
@@ -25,10 +29,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 2 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,68,59)>,
+                <&mo 2>,
+                <&macro_tap>,
+                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,68,59)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&rgb_ug RGB_COLOR_HSB(0,0,0) &mo 2>;
+                <&mo 2>,
+                <&macro_press>,
+                <&rgb_ug RGB_COLOR_HSB(0,0,0)>;
 
             label = "RAISE_LAYER";
         };
@@ -38,10 +46,14 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mo 3 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(190,100,50)>,
+                <&mo 3>,
+                <&macro_tap>,
+                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(190,100,50)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&ext_power EP_OFF &mo 3>;
+                <&mo 3>,
+                <&macro_tap>,
+                <&ext_power EP_OFF>;
 
             label = "ADJUST_LAYER";
         };
