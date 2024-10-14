@@ -7,6 +7,29 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        lower_layer: lower_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mo 1 &rgb_ug RGB_COLOR_HSB(0,0,100)>;
+            label = "LOWER_LAYER";
+        };
+
+        raise_layer: raise_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mo 2 &rgb_ug RGB_COLOR_HSB(0,68,59)>;
+            label = "RAISE_LAYER";
+        };
+
+        adjust_layer: adjust_layer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mo 3 &rgb_ug RGB_COLOR_HSB(190,100,50)>;
+            label = "ADJUST_LAYER";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
