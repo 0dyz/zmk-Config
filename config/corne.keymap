@@ -14,7 +14,7 @@
                 <&macro_press>,
                 <&mo 1>,
                 <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,13)>,
+                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,8)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 1>,
