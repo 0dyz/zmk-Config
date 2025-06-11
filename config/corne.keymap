@@ -1,8 +1,9 @@
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -138,10 +139,10 @@
 
         BDO {
             bindings = <
-&trans  &trans  &trans  &trans        &trans  &trans    &trans          &kp UP_ARROW    &trans           &trans  &trans  &mkp LCLK
-&trans  &trans  &trans  &trans        &kp F2  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &mkp RCLK
-&trans  &trans  &trans  &kp NUMBER_1  &kp F3  &trans    &trans          &trans          &trans           &trans  &trans  &mkp MCLK
-                        &trans        &trans  &trans    &trans          &trans          &kp I
+&trans  &trans  &trans  &trans        &trans  &trans    &kp N7        &kp NUMBER_8  &kp N9        &trans        &trans  &mkp LCLK
+&trans  &trans  &trans  &trans        &kp F2  &trans    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0  &trans  &mkp RCLK
+&trans  &trans  &trans  &kp NUMBER_1  &kp F3  &trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans  &mkp MCLK
+                        &trans        &trans  &trans    &trans        &trans        &kp U
             >;
         };
     };
