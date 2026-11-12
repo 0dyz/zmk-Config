@@ -43,8 +43,6 @@
             label = "RAISE_LAYER";
         };
 
-        };
-
         BDO: BDO {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
