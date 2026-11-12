@@ -13,15 +13,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mo 1>,
-                <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,8)>,
+                <&macro_press>, <&mo 1>,
+                <&macro_tap>, <&rgb_ug RGB_COLOR_HSB(0,0,8)>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 1>,
-                <&macro_tap>,
-                <&rgb_ug RGB_OFF>;
+                <&macro_release>, <&mo 1>,
+                <&macro_tap>, <&rgb_ug RGB_ON <&rgb_ug RGB_COLOR_HSB(0,0,50)>;
 
             label = "LOWER_LAYER";
         };
@@ -30,15 +26,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mo 2>,
-                <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,71,8)>,
+                <&macro_press>, <&mo 2>,
+                <&macro_tap>, <&rgb_ug RGB_COLOR_HSB(0,74,8)>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 2>,
-                <&macro_tap>,
-                <&rgb_ug RGB_OFF>;
+                <&macro_release>, <&mo 2>,
+                <&macro_tap>, <&rgb_ug RGB_ON  <&rgb_ug RGB_COLOR_HSB(0,0,50)>;
 
             label = "RAISE_LAYER";
         };
@@ -47,15 +39,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mo 3>,
-                <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(125,84,8)>,
+                <&macro_press>, <&mo 3>,
+                <&macro_tap>, <&rgb_ug RGB_COLOR_HSB(125,84,8)>,
                 <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 3>,
-                <&macro_tap>,
-                <&rgb_ug RGB_OFF>;
+                <&macro_release>, <&mo 3>,
+                <&macro_tap>, <&rgb_ug RGB_COLOR_HSB(0,0,50)>;
 
             label = "ADJUST_LAYER";
         };
@@ -71,6 +59,20 @@
                 <&rgb_ug RGB_OFF &mo 4>;
 
             label = "BDO";
+        };
+
+        rgb_pin: rgb_pin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&tog 5 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,50)>;
+            label = "RGB_PIN";
+        };
+
+        rgb_unpin: rgb_unpin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&tog 5 &rgb_ug RGB_OFF>;
+            label = "RGB_UNPIN";
         };
     };
 
@@ -131,8 +133,8 @@
         adjust_layer {
             label = "Fkeys";
             bindings = <
-&ext_power EP_TOG  &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &kp F9  &kp F10  &kp F11        &kp F12  &kp C_RANDOM_PLAY  &kp C_PLAY_PAUSE
-&studio_unlock     &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &kp F5  &kp F6   &kp F7         &kp F8   &kp C_VOL_DN       &kp C_VOLUME_UP
+&ext_power EP_TOG  &rgb_pin  &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &kp F9  &kp F10  &kp F11        &kp F12  &kp C_RANDOM_PLAY  &kp C_PLAY_PAUSE
+&studio_unlock     &rgb_unpin  &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &kp F5  &kp F6   &kp F7         &kp F8   &kp C_VOL_DN       &kp C_VOLUME_UP
 &kp LEFT_SHIFT     &trans  &trans           &bl BL_TOG       &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &kp F1  &kp F2   &kp F3         &kp F4   &kp C_PREVIOUS     &kp C_NEXT
                                             &trans           &trans           &trans             &tog 4  &trans   &kp RIGHT_ALT
             >;
@@ -144,6 +146,16 @@
 &trans  &trans  &trans  &trans        &kp F2  &trans    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp NUMBER_0  &trans  &mkp RCLK
 &trans  &trans  &trans  &kp NUMBER_1  &kp F3  &trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans  &mkp MCLK
                         &trans        &trans  &trans    &trans        &trans        &kp U
+            >;
+        };
+
+        rgb_flag {
+            display-name = "RGB Pinned";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &lower_keep  &trans    &trans  &raise_keep  &trans
             >;
         };
     };
