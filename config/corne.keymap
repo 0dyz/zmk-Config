@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
-    macros {
+        macros {
         lower_layer: lower_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -26,23 +26,6 @@
             label = "LOWER_LAYER";
         };
 
-        lower_keep: lower_keep {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mo 1>,
-                <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,8)>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 1>,
-                <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,50)>;
-
-            label = "LOWER_KEEP";
-        };
-
         raise_layer: raise_layer {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -58,23 +41,6 @@
                 <&rgb_ug RGB_OFF>;
 
             label = "RAISE_LAYER";
-        };
-
-        raise_keep: raise_keep {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&mo 2>,
-                <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,74,8)>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&mo 2>,
-                <&macro_tap>,
-                <&rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,50)>;
-
-            label = "RAISE_KEEP";
         };
 
         adjust_layer: adjust_layer {
@@ -109,7 +75,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_tap>,
-                <&tog 5 &rgb_ug RGB_ON &rgb_ug RGB_COLOR_HSB(0,0,50)>;
+                <&tog 5 &rgb_ug RGB_ON>;
 
             label = "RGB_PIN";
         };
@@ -122,6 +88,7 @@
             label = "RGB_UNPIN";
         };
     };
+
 
     keymap {
         compatible = "zmk,keymap";
