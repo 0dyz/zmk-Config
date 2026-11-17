@@ -126,10 +126,10 @@
         rgb_keep_layer {
             label = "RGB_PIN";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &mo 1   &trans    &trans  &mo 2   &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &trans  &trans        &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans    &trans  &trans        &trans  &trans  &trans  &trans
+                        &trans  &lower_layer  &trans    &trans  &raise_layer  &trans
             >;
         };
     };
